@@ -1,13 +1,17 @@
 /* DESKTOP */
+
 #items-wrapper-carousel {
     width: 100vw;
 }
 
 #items-carousel {
     display: flex;
+    /* COLOCAR SCROLL HORIZONTAL NESSE CONTAINER */
     overflow-x: auto;
+    /* DAR UM EFEITO DE PASSAR PARA A PRÓXIMA PARTE  */
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    /* DEIXAR O SCROLL MAIS SUAVE */
     scroll-behavior: smooth;
     overflow: hidden;
 }
@@ -16,15 +20,19 @@
     flex: none;
     width: 100%;
     height: 400px;
+    /* EFEITO DE PASSAR PARA A PRÓXIMA PARTE */
     scroll-snap-align: start;
+    /* TIRAR OS EVENTOS JS DESSA CLASSE */
     pointer-events: none;
 }
 
 .img-carousel {
     width: 100%;
     height: 100%;
+    /* FAZER A IMAGEM FICAR NORMAL, MAS DENTRO DO CONTAINER QUE ELA ESTIVER */
     object-fit: cover;
 }
+
 
 /* MOBILE */
 @media screen and (max-width: 1000px) {
@@ -34,9 +42,12 @@
     
     #items-carousel {
         display: flex;
+        /* COLOCAR SCROLL HORIZONTAL NESSE CONTAINER */
         overflow-x: auto;
+        /* DAR UM EFEITO DE PASSAR PARA A PRÓXIMA PARTE  */
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
+        /* DEIXAR O SCROLL MAIS SUAVE */
         scroll-behavior: smooth;
     }
     
@@ -44,13 +55,16 @@
         flex: none;
         width: 100%;
         height: 400px;
+        /* EFEITO DE PASSAR PARA A PRÓXIMA PARTE */
         scroll-snap-align: start;
+        /* TIRAR OS EVENTOS JS DESSA CLASSE */
         pointer-events: none;
     }
     
     .img-carousel {
         width: 100%;
         height: 100%;
+        /* FAZER A IMAGEM FICAR NORMAL, MAS DENTRO DO CONTAINER QUE ELA ESTIVER */
         object-fit: cover;
     }
 }

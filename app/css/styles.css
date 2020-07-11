@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #dcdcdc;
+}
+
+.texts {
+    text-align: center;
+}
+
+.texts h1 {
+    font-family: 'Bangers', cursive;
+}
+
+.texts p {
+    font-family: 'Bangers', cursive;
+}
